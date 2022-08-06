@@ -4,13 +4,37 @@
     box-sizing: border-box;
 }
 body{
-    background-image: linear-gradient( rgba(0, 0, 0, 0.698), rgba(0, 0, 0, 0.353) ), url(background_image.jpg);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.698), rgba(0, 0, 0, 0.353) ), url(./background_image.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: auto;
 }
 .container{
     margin: 70px auto;
+}
+
+ @keyframes changewidth {
+        from {
+          transform: translateX(0);
+        }
+      
+        to {
+          transform:translateX(780%) ;
+        }
+      }
+      
+      #logo{
+        animation-duration: 10s;
+        animation-name: changewidth;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+
+#logo{
+    width: 250px;
+    margin-left: 50px;
+    margin-top: -30px;
+
 }
 header{
     color: white;
@@ -21,6 +45,7 @@ span{
 }
 h1{
     font-size: 65px;
+    margin-top: 15px;
 }
 h1:hover{
     transform: scale(1.4) ;    
