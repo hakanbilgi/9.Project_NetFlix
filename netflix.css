@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.698), rgba(0, 0, 0, 0.353) ), url(background_image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+}
+.container{
+    margin: 70px auto;
+}
+header{
+    color: white;
+    text-align: center;
+}
+span{
+    color: red;
+}
+h1{
+    font-size: 65px;
+}
+h1:hover{
+    transform: scale(1.4) ;    
+    transition: 2s;
+}
+p{
+    font-size: 24px;
+}
+.form{
+    background-color:rgba(0, 0, 0, 0.509);
+    color: white;
+    width: 500px;
+    margin: 10px auto;
+    font-size: 20px;
+    padding-left: 30px;
+
+}
+form *{
+    padding: 10px;
+    margin: 10px;
+}
+.uzun, select {
+    width: 400px;
+    height: 50px;
+}
+.submit{
+    text-align: center;
+}
+#submit{
+    border: none;
+    background-color: red;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 24px;
+    padding: 10px;
+    opacity: 0.5;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: width 2s, height 2s, background-color 2s,transform 2s; /*submit butonunu döndürme süreleri*/
+
+}
+#submit:hover{
+    background-color: red;
+    /* width:220px ;
+    height: 60px;  */
+    transform: scale(1.2) ;
+    box-shadow: 15px 15px 15px #333333;
+    transition: opacity 2s;
+    opacity: 1;
+    transform: rotate(360deg); /*submit butonu döndürme kodu*/
+    transition: width 2s, height 2s, background-color 2s,transform 2s;
+}
+.uzun, select, textarea{
+    background-color: #333333;
+    border: none;
+    border-radius: 5px;
+    padding: 16px;
+    color: #aeaeae;
+    font-size: 1rem;
+}
+::placeholder{
+    color: #aeaeae;
+    opacity: 1;
+    font-size: 1rem;
+}
